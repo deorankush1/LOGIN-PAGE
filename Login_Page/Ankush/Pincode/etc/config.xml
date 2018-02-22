@@ -1,0 +1,72 @@
+<?<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Ankush_Pincode>
+			<version>1.0.0</version>
+		</Ankush_Pincode>
+	</modules>
+	<frontend>
+		<routers>
+			<pincode>
+				<use>standard</use>
+				<args>
+					<module>Ankush_Pincode</module>
+					<frontName>Pincode</frontName>
+				</args>
+			</Pincode>
+		</routers>
+	</frontend>
+
+
+   
+<global>
+<models>
+<pincode>
+<class>Ankush_Pincode_Model</class>
+<resourceModel>pincode_mysql4</resourceModel>
+</pincode>
+<pincode_mysql4>
+<class>Ankush_Pincode_Model_Mysql4</class>
+<entities>
+<pincode>
+<table>pincode</table>
+</pincode>
+</entities>
+</pincode_mysql4>
+</models>
+<resources>
+<pincode_setup>
+<setup>
+<module>Ankush_Pincode</module>
+</setup>
+<connection>
+<use>core_setup</use>
+</connection>
+</pincode_setup>
+<pincode_write>
+<connection>
+<use>core_write</use>
+</connection>
+</pincode_write>
+<pincode_read>
+<connection>
+<use>core_read</use>
+</connection>
+</pincode_read>
+</resources>
+<blocks>
+<pincode>
+<class>Ankush_Pincode_Block</class>
+</pincode>
+</blocks>
+<helpers>
+<pincode>
+<class>Ankush_Pincode_Helper</class>
+</pincode>
+</helpers>
+</global>
+</config>
+
+
+
+</config>

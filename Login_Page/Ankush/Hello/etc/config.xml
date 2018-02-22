@@ -1,0 +1,58 @@
+<config>
+	<modules>
+		<Ankush_Hello>
+			<version>1.0.0</version>
+		</Ankush_Hello>
+	</modules>
+	<frontend>
+		<routers>
+			<hello>
+				<use>standard</use>
+				<args>
+					<module>Ankush_Hello</module>
+					<frontName>hello</frontName>
+				</args>
+			</hello>
+		</routers>
+	</frontend>
+
+
+    <admin>
+      <routers>
+      <hello>
+      <use>admin</use>
+        <args>
+          <module>Ankush_Hello</module>
+          <frontName>admin_hello</frontName>
+        </args>
+      </hello>
+      </routers>
+    </admin>
+
+
+    <global>
+  <helpers>
+    <hello>
+      <class>Ankush_Hello_Helper</class>
+    </hello>
+  </helpers>
+</global>
+<adminhtml>
+ <menu>
+   <hello module="hello">
+     <title>hello</title>
+     <sort_order>100</sort_order>
+    <children>
+      <hello module="hello">
+        <title>Hello World</title>
+        <sort_order>0</sort_order>
+        <action>admin_hello/adminhtml_index</action>
+      </hello>
+    </children>
+   </hello>
+ </menu>
+</adminhtml>
+
+
+
+</config>

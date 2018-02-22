@@ -1,0 +1,115 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+.container{
+
+	width: 100%;
+	max-width: 1170px;
+	
+	position: relative;
+	margin: auto;
+	margin-top: 20px;
+	margin-left: 1px;
+	margin-right: 1.5px;
+}
+
+
+/*ul.flex-container {
+  background-color: skyblue;
+  list-style: none;
+  float:  right;
+  margin: 10px;
+  padding:20px;
+  font-size: 30px;
+}*/
+
+
+.floating-box{
+	width: 100%;
+	margin: 0;
+	padding-top: 20px;
+	display: block;
+}
+
+
+.floating-box li{
+	display: inline-block;;
+	width: 24%;
+	text-align: center;
+}
+
+
+
+@media (max-width: 960px) and (min-width: 768px) {
+
+.floating-box li{
+width: 31.33%;
+}
+}
+
+
+@media (max-width: 768px) and (min-width: 500px) {
+
+.floating-box li{
+width: 49%;
+}
+}
+
+
+@media (max-width: 500px) {
+
+.floating-box li{
+width: 100%;
+}
+}
+
+
+/*li.pager{
+display: inline-flex !important;
+list-style: none;
+float: left;
+}*/
+
+
+.header{
+  background: Silver;
+   padding:10px;
+}
+
+
+/*.footer{
+	
+   bottom:0;
+   width:100%;
+   height:60px;  
+   background:Silver;
+
+}
+*/
+
+.flex-container{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: block;
+	text-align: center;
+}
+
+.flex-container li{
+	display: inline-block;
+
+}
+
+.flex-container a{
+	text-decoration: none;
+	padding: 2px 10px;
+	background-color: lightblue;
+	margin-left: 15px;
+border-radius: 10px;
+}
